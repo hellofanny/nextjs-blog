@@ -2,6 +2,7 @@ import Layout from "../../components/layout";
 import Head from "next/head";
 import utilStyles from "../../styles/utils.module.css";
 import styles from "./book.module.css";
+import Image from "next/image";
 
 import books from "../../data/books";
 
@@ -36,7 +37,13 @@ export default function Book({ book }) {
       </Head>
       <article className={styles.book_container}>
         <div className={styles.book_image}>
-          <p>Image</p>
+          <Image
+            src="https://images-na.ssl-images-amazon.com/images/I/81qJb1LmkBL.jpg"
+            alt="Picture of the author"
+            width={500}
+            height={600}
+            placeholder="blur" // Optional blur-up while loading
+          />
         </div>
         <div className={styles.book_details}>
           <h1 className={utilStyles.headingXl}>{book.title}</h1>
