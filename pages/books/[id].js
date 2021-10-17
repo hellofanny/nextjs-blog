@@ -40,7 +40,7 @@ export default function Book({ book }) {
         <div className={styles.book_image}>
           <Image
             src={`${basePath}/${book.id}.jpg`}
-            alt="Picture of book cover"
+            alt={`${book.shortTitle} book cover image`}
             layout="fill"
             placeholder="blur" // Optional blur-up while loading
           />
