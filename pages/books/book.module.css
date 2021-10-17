@@ -6,6 +6,7 @@
 .book_image {
   grid-column: 1;
   position: relative;
+  display: block;
   margin-right: 2rem;
 }
 

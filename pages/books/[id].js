@@ -40,7 +40,9 @@ export default function Book({ book }) {
           <Image
             src="https://images-na.ssl-images-amazon.com/images/I/81qJb1LmkBL.jpg"
             alt="Picture of the author"
-            layout="fill"
+            width={400}
+            height={520}
+            layout="responsive"
             placeholder="blur" // Optional blur-up while loading
           />
         </div>
@@ -49,6 +51,11 @@ export default function Book({ book }) {
           <span className={utilStyles.lightText}> {book.author}</span>
           <div>
             <p>{book.description}</p>
+            <p>blahaajahahahahah</p>
+            blahaajahahahahahblahaajahahahahah blahaajahahahahah
+            blahaajahahahahah blahaajahahahahah blahaajahahahahah
+            blahaajahahahahah blahaajahahahahahblahaajahahahahah
+            blahaajahahahahah
             <a href={book.link} target="_blank" rel="noreferrer">
               More details on Amazon
             </a>
