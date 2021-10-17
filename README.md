@@ -22,6 +22,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 🛣 Roadmap
 
+- [ ] Explore more [Dynamic Routes](https://nextjs.org/docs/routing/dynamic-routes)
 - [ ] Explore more [next/image](https://nextjs.org/docs/api-reference/next/image)
 - [ ] Explore [Next.js with Cypress](https://nextjs.org/docs/testing)
 
