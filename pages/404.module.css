@@ -1,0 +1,18 @@
+.container {
+  margin: auto 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 5rem;
+  margin-bottom: 0;
+  color: var(--color-primary);
+}
+
+.description {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
