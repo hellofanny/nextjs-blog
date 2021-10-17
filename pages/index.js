@@ -21,9 +21,14 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>
-          I'm currently work as software engineer. You can also find me on{" "}
-          <a href="https://codepen.io/hellofanny" target="_blank">
+        <p className={utilStyles.centerText}>
+          I'm currently working as software engineer.<br></br> You can also find
+          me on{" "}
+          <a
+            href="https://codepen.io/hellofanny"
+            target="_blank"
+            rel="noreferrer"
+          >
             Codepen
           </a>
           .
