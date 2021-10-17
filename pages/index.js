@@ -37,7 +37,7 @@ export default function Home({ allPostsData, books }) {
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>📚What I've been learning</h2>
+        <h2 className={utilStyles.headingLg}>📚 What I've been learning</h2>
         <ul className={utilStyles.list}>
           {books.map(({ id, author, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -51,7 +51,7 @@ export default function Home({ allPostsData, books }) {
         </ul>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>🔖Blog</h2>
+        <h2 className={utilStyles.headingLg}>🔖 Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>

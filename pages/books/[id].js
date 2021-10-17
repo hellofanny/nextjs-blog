@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import Head from "next/head";
 import utilStyles from "../../styles/utils.module.css";
+import styles from "./book.module.css";
 
 import books from "../../data/books";
 
@@ -33,14 +34,19 @@ export default function Book({ book }) {
       <Head>
         <title>{book.title}</title>
       </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{book.title}</h1>
-        <span className={utilStyles.lightText}> {book.author}</span>
-        <div>
-          <p>{book.description}</p>
-          <a href={book.link} target="_blank" rel="noreferrer">
-            More details on Amazon
-          </a>
+      <article className={styles.book_container}>
+        <div className={styles.book_image}>
+          <p>Image</p>
+        </div>
+        <div className={styles.book_details}>
+          <h1 className={utilStyles.headingXl}>{book.title}</h1>
+          <span className={utilStyles.lightText}> {book.author}</span>
+          <div>
+            <p>{book.description}</p>
+            <a href={book.link} target="_blank" rel="noreferrer">
+              More details on Amazon
+            </a>
+          </div>
         </div>
       </article>
     </Layout>

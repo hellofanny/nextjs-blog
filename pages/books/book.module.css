@@ -1,0 +1,12 @@
+.book_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.book_image {
+  grid-column: 1;
+}
+
+.book_details {
+  grid-column: 2 / span 2;
+}
