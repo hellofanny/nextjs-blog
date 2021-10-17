@@ -30,6 +30,7 @@ export const getStaticProps = (context) => {
 };
 
 export default function Book({ book }) {
+  const basePath = "/images";
   return (
     <Layout>
       <Head>
@@ -38,8 +39,8 @@ export default function Book({ book }) {
       <article className={styles.book_container}>
         <div className={styles.book_image}>
           <Image
-            src="https://images-na.ssl-images-amazon.com/images/I/81qJb1LmkBL.jpg"
-            alt="Picture of the author"
+            src={`${basePath}/${book.id}.jpg`}
+            alt="Picture of book cover"
             layout="fill"
             placeholder="blur" // Optional blur-up while loading
           />
