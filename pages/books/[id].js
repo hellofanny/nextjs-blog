@@ -40,8 +40,7 @@ export default function Book({ book }) {
           <Image
             src="https://images-na.ssl-images-amazon.com/images/I/81qJb1LmkBL.jpg"
             alt="Picture of the author"
-            width={500}
-            height={600}
+            layout="fill"
             placeholder="blur" // Optional blur-up while loading
           />
         </div>

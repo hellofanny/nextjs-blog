@@ -5,6 +5,8 @@
 
 .book_image {
   grid-column: 1;
+  position: relative;
+  margin-right: 2rem;
 }
 
 .book_details {
