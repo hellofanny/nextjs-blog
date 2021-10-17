@@ -2,6 +2,10 @@
 
 > blog sample based on Next tutorial
 
+
+<img width="800" alt="image blog sample" src="https://user-images.githubusercontent.com/3356699/137646645-b2040a38-0589-4d2a-80ed-9c19c6b103d0.png">
+
+
 ***
 
 ## ▶️ Getting Started
