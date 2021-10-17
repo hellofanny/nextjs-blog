@@ -13,6 +13,10 @@ export default function Layout({ children, home }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
+        <meta
           name="description"
           content="Learning how to build a personal website using Next.js"
         />
