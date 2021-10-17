@@ -1,6 +1,7 @@
 .book_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
 }
 
 .book_image {
@@ -8,8 +9,15 @@
   position: relative;
   display: block;
   margin-right: 2rem;
+  grid-row: 1 / span 2;
+  max-height: 370px;
 }
 
+.book_header {
+  grid-row: 1;
+}
+
+.book_header,
 .book_details {
   grid-column: 2 / span 2;
 }

@@ -40,22 +40,17 @@ export default function Book({ book }) {
           <Image
             src="https://images-na.ssl-images-amazon.com/images/I/81qJb1LmkBL.jpg"
             alt="Picture of the author"
-            width={400}
-            height={520}
-            layout="responsive"
+            layout="fill"
             placeholder="blur" // Optional blur-up while loading
           />
         </div>
-        <div className={styles.book_details}>
+        <header className={styles.book_header}>
           <h1 className={utilStyles.headingXl}>{book.title}</h1>
-          <span className={utilStyles.lightText}> {book.author}</span>
+          <span className={utilStyles.lightText}>{book.author}</span>
+        </header>
+        <div className={styles.book_details}>
           <div>
             <p>{book.description}</p>
-            <p>blahaajahahahahah</p>
-            blahaajahahahahahblahaajahahahahah blahaajahahahahah
-            blahaajahahahahah blahaajahahahahah blahaajahahahahah
-            blahaajahahahahah blahaajahahahahahblahaajahahahahah
-            blahaajahahahahah
             <a href={book.link} target="_blank" rel="noreferrer">
               More details on Amazon
             </a>
