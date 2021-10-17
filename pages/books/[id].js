@@ -4,6 +4,8 @@ import utilStyles from "../../styles/utils.module.css";
 import styles from "./book.module.css";
 import Image from "next/image";
 
+import { shimmerPlaceholder } from "../../utils/helpers";
+
 import books from "../../data/books";
 
 export const getStaticPaths = () => {
@@ -29,25 +31,6 @@ export const getStaticProps = (context) => {
   };
 };
 
-const shimmer = (w, h) => `
-<svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs>
-    <linearGradient id="g">
-      <stop stop-color="#FEE6E8" offset="20%" />
-      <stop stop-color="#fff" offset="50%" />
-      <stop stop-color="#FEE6E8" offset="70%" />
-    </linearGradient>
-  </defs>
-  <rect width="${w}" height="${h}" fill="#FEE6E8" />
-  <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
-  <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />
-</svg>`;
-
-const toBase64 = (str) =>
-  typeof window === "undefined"
-    ? Buffer.from(str).toString("base64")
-    : window.btoa(str);
-
 export default function Book({ book }) {
   const basePath = "/images";
   return (
@@ -62,8 +45,9 @@ export default function Book({ book }) {
             alt={`${book.shortTitle} book cover image`}
             layout="fill"
             placeholder="blur" // Optional blur-up while loading
-            blurDataURL={`data:image/svg+xml;base64,${toBase64(
-              shimmer(700, 475)
+            blurDataURL={`data:image/svg+xml;base64,${shimmerPlaceholder(
+              700,
+              475
             )}`}
           />
         </div>

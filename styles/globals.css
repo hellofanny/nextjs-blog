@@ -1,5 +1,7 @@
 :root {
   --color-primary: #d23d71;
+  --color-primary-light: #ffecec;
+  --background-gray: #dedede;
 }
 
 html,
